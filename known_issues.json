@@ -1,0 +1,62 @@
+{
+  "title": "Known issues — Budget Transparency",
+  "about": "Every problem a session could not solve on its own in the budget-transparency project, each with how to solve it. Owner's part is in the Start here list; the session's part is worked through in priority order.",
+  "topics": ["Project home", "Data access"],
+  "quick_start": [
+    "Five minutes: KI-01 — download one budget data file (CSV/XLSX) from bundeshaushalt.de in your browser and drop it into this chat."
+  ],
+  "how_to_send": [
+    {"label": "Data files", "text": "Download in your browser, then drag the file into this chat — or, if you work locally, commit it under data/ and push."}
+  ],
+  "places_order": ["This chat", "github.com, in your browser", "bundeshaushalt.de, in your browser", "dezernatzukunft.org, in your browser"],
+  "see_also": ["TRACKER.md — backlog and session log", "DECISIONS.md — standing decisions", "RESEARCH.md — findings with sources"],
+  "issues": [
+    {
+      "id": "KI-02",
+      "topic": "Project home",
+      "kind": "owner decision",
+      "status": "done 2026-11-03: owner created TK725/gov-budget-transparency; files pushed as a fresh initial commit (no shared history with the career repo); career-repo copy removed",
+      "opened": "2026-11-03",
+      "title": "The project lives in the wrong repo — owner creates the dedicated one",
+      "detail": "The project sat inside the private career repo (TK725/next-career-step, branch claude/german-budget-transparency-jr0s9o). The owner decided on 2026-11-03 to move it to its own repo now (D4 always required this before going public) and created the repo himself.",
+      "where": "the whole project; TRACKER.md #7",
+      "solve": {
+        "you": [
+          {"where": "github.com, in your browser",
+           "do": "Create an empty private repo at https://github.com/new and, if Claude's GitHub access is limited to selected repositories, add it at https://github.com/settings/installations → Configure next to Claude → Repository access → Save.",
+           "send": "A reply in this chat: 'KI-02: repo is <name>'."}
+        ],
+        "me": [
+          "Attach the new repo (add_repo, push access), push the files as a fresh initial commit, adapt CLAUDE.md/GUARDRAILS.md for standalone life, clean the career repo."
+        ],
+        "done_when": "The new repo holds all project files with fresh history, and the career repo's branch no longer contains the project."
+      }
+    },
+    {
+      "id": "KI-01",
+      "topic": "Data access",
+      "kind": "source access",
+      "status": "open",
+      "opened": "2026-11-03",
+      "subjects": ["bundeshaushalt.de", "bundesfinanzministerium.de"],
+      "title": "Budget data files cannot be downloaded by an automated session",
+      "detail": "2026-08-13: bundeshaushalt.de was blocked by the research environment's egress proxy. Re-checked 2026-11-03: the proxy now allows both federal domains, but bundeshaushalt.de (JSON API and static PDFs alike) and bundesfinanzministerium.de each answer HTTP 503 with a bot-protection 'Security Check' HTML page to non-browser clients. A browser session passes the check; curl/WebFetch do not.",
+      "where": "TRACKER.md #1 (hands-on data verification) — blocked until a data file is in hand",
+      "solve": {
+        "you": [
+          {"where": "bundeshaushalt.de, in your browser",
+           "do": "Open https://www.bundeshaushalt.de/DE/Bundeshaushalt-digital/bundeshaushalt-digital.html and use the open-data download (CSV or XLSX). Quickest useful version: one file, budget year 2025, Soll. Optional: also 2024 Ist, for the plan-vs-actual angle.",
+           "send": "The downloaded file(s) in this chat, or committed under data/."},
+          {"where": "This chat",
+           "do": "Optional, only if no CSV/XLSX download exists on the page: say which download formats the page actually offers.",
+           "send": "A short reply: 'KI-01: formats are …'."}
+        ],
+        "me": [
+          "Before relying on the owner: try the Dezernat Zukunft Haushaltstracker dataset (their downloadable scientific dataset covers every Titel, ~10 years) and GovData-listed mirrors — neither tried yet as of 2026-11-03; they may serve the same data without bot protection.",
+          "Once a file is in hand: inspect structure (Einzelplan/Kapitel/Titel columns, Soll/Ist), reproduce the official headline total for that year as a sanity check, record findings as RESEARCH.md Phase 2, close Tracker #1."
+        ],
+        "done_when": "One full budget year at Titel level sits under data/ and its computed total matches the official headline figure."
+      }
+    }
+  ]
+}
