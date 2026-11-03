@@ -29,3 +29,6 @@ Side project, no deadline pressure. [placeholder: user to confirm rough cadence,
 
 ## Budget
 Small out-of-pocket costs OK (domain, static hosting — realistically €10–50/year). No large spend.
+
+## Provenance
+Founded 2026-08-13 inside a private repo of the owner's, on branch `claude/german-budget-transparency-jr0s9o`, as a `budget-transparency/` subfolder (incubation commits there: `913cfb3` founding + Phase 1 research, `8c6e0cb` setup upgrade to the project-setup standard, `f28eace` KI-02 opened, `87cb30f` folder removed after migration). Moved to this dedicated repo on 2026-11-03 as a fresh root commit — deliberately **without** carrying git history, so this repo shares no commits with its private origin (DECISIONS.md D4/D8). The incubation branch was deleted after the move; this section is its record.
