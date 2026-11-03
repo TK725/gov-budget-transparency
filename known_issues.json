@@ -3,7 +3,6 @@
   "about": "Every problem a session could not solve on its own in the budget-transparency project, each with how to solve it. Owner's part is in the Start here list; the session's part is worked through in priority order.",
   "topics": ["Project home", "Data access"],
   "quick_start": [
-    "Thirty seconds: KI-03 — delete the old incubation branch on GitHub (one click, link in the issue).",
     "Five minutes: KI-01 — download one budget data file (CSV/XLSX) from bundeshaushalt.de in your browser and drop it into this chat."
   ],
   "how_to_send": [
@@ -16,7 +15,7 @@
       "id": "KI-03",
       "topic": "Project home",
       "kind": "owner decision",
-      "status": "open",
+      "status": "done 2026-11-03: owner deleted the branch in the browser; session verified via ls-remote that it is gone and archive/career-history-aug-2026 remains",
       "opened": "2026-11-03",
       "title": "Old incubation branch must be deleted by the owner",
       "detail": "After the move (KI-02), the owner asked to delete the incubation branch from the origin repo. Verified safe on 2026-11-03: the branch's career history was first preserved on a new branch 'archive/career-history-aug-2026' (pushed), so only the four already-migrated budget commits become unreachable. The session cannot delete it: both 'git push --delete' and the GitHub API return HTTP 403 — the session's proxy forbids destructive ref operations.",

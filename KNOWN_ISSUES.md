@@ -4,17 +4,15 @@
 
 Every problem a session could not solve on its own in the budget-transparency project, each with how to solve it. Owner's part is in the Start here list; the session's part is worked through in priority order.
 
-**2 open, 1 done.** Open by topic: Project home 1; Data access 1.
+**1 open, 2 done.** Open by topic: Data access 1.
 
 ## Start here: your part
 
-- Thirty seconds: KI-03 — delete the old incubation branch on GitHub (one click, link in the issue).
 - Five minutes: KI-01 — download one budget data file (CSV/XLSX) from bundeshaushalt.de in your browser and drop it into this chat.
 
 By where you do it:
 
 - **This chat:** KI-01.
-- **github.com, in your browser:** KI-03.
 - **bundeshaushalt.de, in your browser:** KI-01.
 - **Nothing from you** (the session's alone): none.
 
@@ -23,15 +21,6 @@ By where you do it:
 - **Data files:** Download in your browser, then drag the file into this chat — or, if you work locally, commit it under data/ and push.
 
 ## Open issues
-
-### Project home
-
-- **KI-03 Old incubation branch must be deleted by the owner**. *Owner decision, opened 2026-11-03.* After the move (KI-02), the owner asked to delete the incubation branch from the origin repo. Verified safe on 2026-11-03: the branch's career history was first preserved on a new branch 'archive/career-history-aug-2026' (pushed), so only the four already-migrated budget commits become unreachable. The session cannot delete it: both 'git push --delete' and the GitHub API return HTTP 403 — the session's proxy forbids destructive ref operations.
-  *Where:* origin repo TK725/next-career-step, branch claude/german-budget-transparency-jr0s9o; PROJECT_BRIEF.md Provenance already describes it as deleted.
-  *How to solve:*
-  - **You**, *github.com, in your browser*: Open https://github.com/TK725/next-career-step/branches, find 'claude/german-budget-transparency-jr0s9o', click its trash icon. Do NOT delete 'archive/career-history-aug-2026' — that one now holds the early career history. *Send:* A short reply: 'KI-03 done'.
-  - **Me:** Mark this issue done; nothing else — the archive branch and provenance note are already in place.
-  - **Done when:** The branch no longer appears on the origin repo's branches page.
 
 ### Data access
 
@@ -46,6 +35,7 @@ By where you do it:
 
 ## Done
 
+- **KI-03 Old incubation branch must be deleted by the owner** (Project home): done 2026-11-03: owner deleted the branch in the browser; session verified via ls-remote that it is gone and archive/career-history-aug-2026 remains.
 - **KI-02 The project lives in the wrong repo — owner creates the dedicated one** (Project home): done 2026-11-03: owner created TK725/gov-budget-transparency; files pushed as a fresh initial commit (no shared history with the career repo); career-repo copy removed.
 
 ## See also
