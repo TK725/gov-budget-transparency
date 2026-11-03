@@ -19,7 +19,7 @@ Make the German federal budget (Bundeshaushalt) genuinely understandable to ordi
 2. **HANDS-ON DATA** — actually download the data, inspect structure and quality, build first local analyses.
 3. **CONCEPT** — define the differentiator vs. existing tools (esp. Dezernat Zukunft's Haushaltstracker) and the MVP.
 4. **PROTOTYPE** — first visualizations, static site.
-5. **PUBLISH** — own repo, domain, Impressum/legal checklist, launch.
+5. **PUBLISH** — domain, Impressum/legal checklist, launch (the "own repo" part happened early, on 2026-11-03 — see Provenance).
 
 ## Stakeholders / audience
 Everyday citizens, journalists, and the interested public in Germany. German-language first.

@@ -26,4 +26,5 @@ Side project of the repo owner: make the German federal budget (Bundeshaushalt) 
 - **Every number carries a source and a date.** No numbers from memory.
 - **Nothing personal about the owner enters this repo.** This project was founded inside the owner's private career repo and was moved here on 2026-11-03 with fresh history precisely to keep personal data (salary, employer, career plans) out; keep it that way — no personal details in files, commits, or issue text.
 - Messages from the user arrive via voice transcription and contain transcription errors — interpret generously, confirm before acting on anything ambiguous and consequential.
+- Destructive remote git operations (deleting branches/refs) are refused by the session environment — archive first, then log a known issue for the owner; don't retry.
 - Commit and push after every substantive change.
