@@ -6,7 +6,7 @@
 
 | # | Task | Status | Depends on |
 |---|------|--------|------------|
-| 1 | **Hands-on data verification**: get one full budget year at Titel level and inspect it. First try the session route (Dezernat Zukunft dataset / GovData mirrors — KI-01 `me` steps); official federal sites bot-block automated clients. | in progress (blocked on data file, see KI-01) | KNOWN_ISSUES KI-01 |
+| 1 | **Hands-on data verification**: get one full budget year at Titel level and inspect it. First try the session route (Dezernat Zukunft dataset / GovData mirrors — KI-01 `me` steps); official federal sites bot-block automated clients. | in progress (session route untried; owner fallback = KI-01) | KNOWN_ISSUES KI-01 |
 | 10 | **Work the open known issues** — the owner's part is the "Start here" list in `KNOWN_ISSUES.md` (currently: KI-01, download one data file in your browser). | open | — |
 | 8 | **Sondervermögen deep-dive**: current list of active special funds, where each Wirtschaftsplan is published, whether machine-readable. Clears the `[verify]` markers in RESEARCH.md. | not started | — |
 | 2 | **Concept & differentiation**: study Dezernat Zukunft's Haushaltstracker hands-on; define what this project does that it doesn't (candidate angle: accountability layer — Soll-vs-Ist deviations, quiet year-over-year changes, Sondervermögen consolidation, plain-language Titel explanations). Decide MVP. | not started | 1 (partially startable now) |
